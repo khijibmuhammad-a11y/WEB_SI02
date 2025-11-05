@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer Sign Up Form</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 40px;
+    }
+
+    .form-container {
+      background-color: white;
+      width: 400px;
+      margin: auto;
+      padding: 25px 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 5px;
+    }
+
+    p {
+      text-align: center;
+      color: gray;
+      font-size: 13px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="time"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .checkbox-group, .availability-group, .interests-group {
+      margin-top: 10px;
+    }
+
+    .checkbox-group label,
+    .availability-group label,
+    .interests-group label {
+      display: inline-block;
+      margin-right: 10px;
+      font-weight: normal;
+    }
+
+    .time-group {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    button {
+      width: 100%;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    textarea {
+      resize: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Volunteer Sign Up Form</h2>
+    <p>Please fill out the following form to become a volunteer.</p>
+
+    <form>
+      <label>First Name</label>
+      <input type="text" placeholder="Enter your first name" required>
+
+      <label>Last Name</label>
+      <input type="text" placeholder="Enter your last name" required>
+
+      <label>Email</label>
+      <input type="email" placeholder="Enter your email address" required>
+
+      <label>Phone Number</label>
+      <input type="tel" placeholder="Enter your phone number" required>
+
+      <label>Date of Birth</label>
+      <input type="date" required>
+
+      <label>Preferred Volunteer Role</label>
+      <select>
+        <option>Select your preferred volunteer role</option>
+        <option>Event Helper</option>
+        <option>Fundraiser</option>
+        <option>Community Outreach</option>
+        <option>Other</option>
+      </select>
+
+      <label>Availability</label>
+      <div class="availability-group">
+        <label><input type="checkbox"> Monday</label>
+        <label><input type="checkbox"> Tuesday</label>
+        <label><input type="checkbox"> Wednesday</label><br>
+        <label><input type="checkbox"> Thursday</label>
+        <label><input type="checkbox"> Friday</label>
+        <label><input type="checkbox"> Saturday</label>
+        <label><input type="checkbox"> Sunday</label>
+      </div>
+
+      <div class="time-group">
+        <div>
+          <label>Available Start Time</label>
+          <input type="time">
+        </div>
+        <div>
+          <label>Available End Time</label>
+          <input type="time">
+        </div>
+      </div>
+
+      <label>Skills and Interests</label>
+      <textarea rows="2" placeholder="Enter your skills and experience"></textarea>
+
+      <label>Interests</label>
+      <div class="interests-group">
+        <label><input type="checkbox"> Animals</label>
+        <label><input type="checkbox"> Environment</label>
+        <label><input type="checkbox"> Health</label><br>
+        <label><input type="checkbox"> Children</label>
+        <label><input type="checkbox"> Homelessness</label>
+        <label><input type="checkbox"> Education</label>
+      </div>
+
+      <label><input type="checkbox" required> I agree to the terms and conditions of the volunteer program.</label>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+</html>

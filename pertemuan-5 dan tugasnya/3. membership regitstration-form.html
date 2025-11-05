@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Membership Registration Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .form-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    p {
+      text-align: center;
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    label {
+      font-weight: bold;
+      font-size: 14px;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+
+    .input-group {
+      display: flex;
+      gap: 10px;
+    }
+
+    .radio-group, .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .radio-group label, .checkbox-group label {
+      font-weight: normal;
+    }
+
+    textarea {
+      resize: none;
+      height: 70px;
+    }
+
+    .agree {
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Membership Registration Form</h2>
+    <p>Please fill out the form below to become a member.</p>
+
+    <div class="input-group">
+      <div style="flex:1;">
+        <label>First Name</label>
+        <input type="text" placeholder="Enter your first name">
+      </div>
+      <div style="flex:1;">
+        <label>Last Name</label>
+        <input type="text" placeholder="Enter your last name">
+      </div>
+    </div>
+
+    <label>Email Address</label>
+    <input type="email" placeholder="Enter your email address">
+
+    <label>Phone Number</label>
+    <input type="tel" placeholder="Enter your phone number">
+
+    <label>Address Line 1</label>
+    <input type="text" placeholder="Enter your address line 1">
+
+    <label>Address Line 2</label>
+    <input type="text" placeholder="Enter your address line 2">
+
+    <label>Country</label>
+    <select>
+      <option>United States of America</option>
+      <option>Indonesia</option>
+      <option>Malaysia</option>
+      <option>Singapore</option>
+      <option>Other</option>
+    </select>
+
+    <label>Membership Type</label>
+    <div class="radio-group">
+      <label><input type="radio" name="membership"> Basic</label>
+      <label><input type="radio" name="membership"> Premium</label>
+      <label><input type="radio" name="membership"> Elite</label>
+    </div>
+
+    <label>Interests</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox"> Football</label>
+      <label><input type="checkbox"> Basketball</label>
+      <label><input type="checkbox"> Baseball</label>
+      <label><input type="checkbox"> Hockey</label>
+      <label><input type="checkbox"> Soccer</label>
+      <label><input type="checkbox"> Other</label>
+    </div>
+
+    <label>Why do you want to become a member?</label>
+    <textarea placeholder="Please tell us why you want to join"></textarea>
+
+    <div class="agree">
+      <label><input type="checkbox"> I agree to the terms and conditions.</label>
+    </div>
+
+    <button type="submit">Submit Registration</button>
+  </div>
+
+</body>
+</html>

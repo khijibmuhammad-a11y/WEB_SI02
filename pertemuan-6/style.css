@@ -1,0 +1,47 @@
+    p {
+            color: red;
+            font-size: 16px;
+            font-family: poppins;
+            font-weight: bold; }
+
+      html,  body { 
+         background: linear-gradient(rgb(148, 211, 253),rgb(99, 99, 141),rgb(47, 41, 71));
+         }
+         cursor:url(images.jpeg), auto;
+
+         h1, h2 {
+            color: rgb(124, 255, 112);
+            text-align: center;
+         }
+
+         .tulis1{
+            color: rgb(38, 66, 12);
+            font-size: 20px;
+            font-family: poppins;
+            font-weight: bold;
+            font-style: italic;
+         }
+        
+         .tulis2{
+            color: rgb(255, 255, 253);
+            font-size: 20px;
+            font-family: poppins;
+            font-weight: bold;
+            font-style: italic;
+         }
+
+         a {text-decoration: none;}
+
+         a:link { color: rgb(0, 0, 255); } 
+         a:visited { color: purple; } 
+         a:hover { color: red; } 
+         a:active { color: green; }
+
+        p::first-line { 
+        font-weight: bold; 
+        color: orange; 
+        } 
+
+        p::first-letter { 
+        font-size: 2em; 
+        } 
