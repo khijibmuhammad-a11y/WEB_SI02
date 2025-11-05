@@ -1,3 +1,4 @@
+<<<<<<< HEAD:pertemuan-5 dan tugasnya/5. Order Form.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -154,4 +155,162 @@
     <button type="submit">Submit Order</button>
   </form>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      padding: 20px;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+    h2 {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      margin-top: 15px;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select,
+    textarea,
+    input[type="number"] {
+      width: 100%;
+      padding: 6px 8px;
+      box-sizing: border-box;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      font-size: 14px;
+    }
+    textarea {
+      resize: vertical;
+      height: 60px;
+    }
+    .inline-group {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .inline-group > div {
+      width: 48%;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 5px;
+    }
+    .checkbox-group label {
+      font-weight: normal;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #222;
+      color: white;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 3px;
+      cursor: pointer;
+      width: 100%;
+      font-weight: bold;
+    }
+    button:hover {
+      background-color: #444;
+    }
+    .terms {
+      margin-top: 10px;
+      font-weight: normal;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Order Form</h2>
+    
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" required />
+    
+    <div class="inline-group">
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required />
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+1 (555) 123-4567" required />
+      </div>
+    </div>
+    
+    <label>Order Details</label>
+    
+    <div class="inline-group">
+      <div>
+        <label for="product">Product</label>
+        <select id="product" name="product" required>
+          <option value="" disabled selected>Select a product</option>
+          <option value="product1">Product 1</option>
+          <option value="product2">Product 2</option>
+          <option value="product3">Product 3</option>
+        </select>
+      </div>
+      <div>
+        <label for="quantity">Quantity</label>
+        <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+      </div>
+    </div>
+    
+    <label>Size</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="size" value="small" /> Small</label>
+      <label><input type="checkbox" name="size" value="medium" /> Medium</label>
+      <label><input type="checkbox" name="size" value="large" /> Large</label>
+      <label><input type="checkbox" name="size" value="xl" /> XL</label>
+    </div>
+    
+    <label>Color</label>
+    <div class="checkbox-group">
+      <label><input type="checkbox" name="color" value="red" /> Red</label>
+      <label><input type="checkbox" name="color" value="green" /> Green</label>
+      <label><input type="checkbox" name="color" value="blue" /> Blue</label>
+      <label><input type="checkbox" name="color" value="black" /> Black</label>
+    </div>
+    
+    <label for="comments">Additional Comments</label>
+    <textarea id="comments" name="comments" placeholder="Enter any additional comments or instructions"></textarea>
+    
+    <label>Payment Details</label>
+    <select id="payment-method" name="payment-method" required>
+      <option value="" disabled selected>Select a payment method</option>
+      <option value="credit-card">Credit Card</option>
+      <option value="debit-card">Debit Card</option>
+      <option value="paypal">PayPal</option>
+      <option value="bank-transfer">Bank Transfer</option>
+    </select>
+    
+    <div class="terms">
+      <label><input type="checkbox" name="terms" required /> I accept the terms and conditions.</label>
+    </div>
+    
+    <button type="submit">Submit Order</button>
+  </form>
+</body>
+>>>>>>> f64c4c4e14af51a1753a1aaf3f21a561de4042a6:pertemuan-5/5. Order Form.html
 </html>
