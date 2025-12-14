@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Slideshow</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    img { display: none; width: 300px; }
+    img.active { display: block; }
+  </style>
+</head>
+<body>
+  <img src="https://i.pinimg.com/736x/5d/e8/52/5de852dccca5b0c2894460e2f07c0dca.jpg" class="active">
+  <img src="https://i.pinimg.com/736x/06/25/9a/06259a2db2f90d3d64b7168d57fb2bdb.jpg">
+  <img src="https://i.pinimg.com/736x/62/f9/59/62f959f15efcb18561b148c423c3feae.jpg">
+
+  <br>
+  <button id="prev">Prev</button>
+  <button id="next">Next</button>
+
+  <script>
+    let index = 0;
+    let images = $("img");
+
+    function showImage(i) {
+      images.fadeOut().removeClass("active");
+      $(images[i]).fadeIn().addClass("active");
+    }
+
+    $("#next").click(function(){
+      index = (index + 1) % images.length;
+      showImage(index);
+    });
+
+    $("#prev").click(function(){
+      index = (index - 1 + images.length) % images.length;
+      showImage(index);
+    });
+  </script>
+</body>
+</html>

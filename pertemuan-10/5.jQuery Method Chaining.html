@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Notifikasi</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    #notif {
+      display: none;
+      background: yellow;
+      padding: 10px;
+      width: 200px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <button id="showNotif">Tampilkan Notifikasi</button>
+  <div id="notif">Ini adalah notifikasi!</div>
+
+  <script>
+    $("#showNotif").click(function(){
+      $("#notif").css("background", "lightgreen")
+        .fadeIn(1000)
+        .slideDown(1000)
+        .delay(3000)
+        .slideUp(1000)
+        .fadeOut(1000);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="teks">Halo Semuanya</p>
+
+    <button onclick="UbahTeks()">Ubah Teks</button>
+    <button onclick="UbahWarna()">Ubah Warna</button>
+    <button onclick="sembunyikan()">Sembunyikan</button>
+    <button onclick="tampilkan()">Tampilkan</button>
+    
+
+    <script>
+        function UbahTeks() {
+            document.getElementById("teks").innerHTML = "<b>teks sudah diubah</b>";
+        }
+        function UbahWarna() {
+            document.getElementById("teks").style.color = "red";
+        }
+        function sembunyikan() {
+            document.getElementById("teks").style.display = "none";
+        }
+        function tampilkan() {
+            document.getElementById("teks").style.display = "block";
+        }
+        
+    </script>
+</body>
+</html>

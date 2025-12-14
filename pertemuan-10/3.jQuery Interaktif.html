@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FAQ</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    .question { cursor: pointer; }
+    .answer { display: none; }
+  </style>
+</head>
+<body>
+  <div class="faq">
+    <p class="question">Apa itu HTML?</p>
+    <p class="answer">HTML adalah bahasa markup untuk membuat halaman web.</p>
+
+    <p class="question">Apa itu CSS?</p>
+    <p class="answer">CSS digunakan untuk mempercantik tampilan web.</p>
+
+    <p class="question">Apa itu JavaScript?</p>
+    <p class="answer">JavaScript membuat web lebih interaktif.</p>
+
+    <p class="question">Apa itu jQuery?</p>
+    <p class="answer">jQuery adalah library JavaScript yang memudahkan manipulasi DOM.</p>
+
+    <p class="question">Apa itu DOM?</p>
+    <p class="answer">DOM adalah representasi struktur dokumen HTML.</p>
+  </div>
+
+  <script>
+    $(".question").click(function(){
+      $(this).next(".answer").toggle();
+    });
+
+    $(".question").hover(
+      function(){ $(this).css("color", "blue"); },
+      function(){ $(this).css("color", "black"); }
+    );
+  </script>
+</body>
+</html>

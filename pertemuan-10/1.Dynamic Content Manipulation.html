@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Biodata</title>
+</head>
+<body>
+  <div id="biodata">
+    <h2 id="nama">Nama: Muhamad Khijib Mokotek</h2>
+    <p id="nim">NIM: 0110125027</p>
+    <p id="prodi">Program Studi: Sistem Informasi</p>
+    <img id="foto" src="pribadi_blob.jpeg" alt="Foto Profil">
+  </div>
+
+  <button onclick="ubahNama()">Ubah Nama</button>
+  <button onclick="ubahProdi()">Ubah Program Studi</button>
+  <button onclick="gantiFoto()">Ganti Foto</button>
+  <button onclick="sembunyikan()">Sembunyikan Biodata</button>
+  <button onclick="tampilkan()">Tampilkan Biodata</button>
+
+  <script>
+    function ubahNama() {
+      document.getElementById("nama").innerHTML = "Nama: Seseorang Pria";
+    }
+    function ubahProdi() {
+      document.getElementById("prodi").innerHTML = "Program Studi: Sistem Informasi";
+    }
+    function gantiFoto() {
+      document.getElementById("foto").setAttribute("src", "https://i.pinimg.com/1200x/ec/70/74/ec707485a74f9618b34524f55ac6a1c3.jpg");
+    }
+    function sembunyikan() {
+      document.getElementById("biodata").style.display = "none";
+    }
+    function tampilkan() {
+      document.getElementById("biodata").style.display = "block";
+    }
+  </script>
+</body>
+</html>
